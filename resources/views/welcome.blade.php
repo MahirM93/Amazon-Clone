@@ -16,10 +16,12 @@
                 <header>
                     <div class="first">
                         <div class="flex logo">
-                    <a href="#"><img src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png"></a>
-                    <div class="map-flex">
+                    <a href="#"><img src="https://clipartcraft.com/images/amazon-logo-transparent-high-resolution-5.png"alt=""></a>
+                    <div class="map flex">
                     <i class="fas fa-map-marker"></i>
-                        <div>
+                  
+                        <div>  
+                        
                             <span>Deliver to</span>
                             <span>Germany</span>
                         </div>
@@ -33,7 +35,7 @@
                 
             </div>
             <input type="text">
-            <i class="fa fa-search"></i>
+            <i class="fa fa-search"><i class="fa-solid fa-magnifying-glass"></i></i>
             
         </div>
         <div class="flex right">
@@ -47,6 +49,10 @@
                 <span>Account & List</span>
                 <i class="fas fa-caret-down"></i>
         </div>
+        </div>
+        <div class="sign">
+            <span>Returns</span>
+            <span>& Orders</span>
         </div>
         <div class="flex cart">
         <i class="fas fa-shopping-cart"></i>
@@ -101,7 +107,7 @@ body{
     display:flex;
     justify-content:center;
 }
-.flex span,i{
+.flex span , i {
         color:white;
  }
 .logo{
@@ -177,12 +183,91 @@ font-size:13px;
     background-color:rgb(236,234,234);
     padding:6px 0;
 }
-.input .fa-search{
-    color:#rgb(51,51,51);
-    padding:10px 15px;
-    font-size:20px;
+
+.input div span{
+    border-radius:5px 0 0 5px;
+    color:rgb(51,51,51);
+    padding:6px 5px;
+    font-size:13px;
     cursor:pointer;
-    background-color:#febd69;
-    border-radius:0 5px 5px 0;
+
 }
+.input .fa-caret-down{
+color:rgb(51,51,51);
+cursor:pointer;
+padding:5px;
+}
+.lang i{
+    padding:0;
+    margin:0;
+    color:gray;
+
+}
+.lang{
+    padding:5px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    border:1px solid transparent;
+    border-radius:3px;
+}
+.right img{
+    width:30px;
+    height:30px;
+    padding:4px;
+    margin:0;
+    padding-top:10px;
+    cursor:pointer;
+}
+.sign{
+    display:flex;
+    flex-direction:column;
+    padding:3px 6px;
+    cursor:pointer;
+    border:1px solid transparent;
+    border-radius:3px;
+
+}
+.sign span:first-child{
+    font-weight:400;
+    font-size:13px;
+}
+.sign span{
+    display:inline-block;
+    width:100%;
+    font-weight:bold;
+
+}
+.flex .ac span{
+    font-size:15px;
+    margin-right:5px;
+    font-weight:bold;
+
+}
+.fa-shoping-cart{
+    font-size:30px;
+
+}
+.ca{
+    font-size:14px;
+    font-weight:bold;
+}
+.cart{
+    align-items:flex-end;
+    position:relative;
+    padding:5px 10px;
+    cursor:pointer;
+    border:1px solid transparent;
+    border-radius:3px;
+
+}
+.cart p{
+   position:absolute;
+   font-weight:bolder; 
+   color:#131a22;
+   top:7px;
+   left:23px;
+}
+
+
 </style>
