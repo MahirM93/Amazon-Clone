@@ -4,54 +4,185 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Amazon-Clone</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
+        <link href="/css/app.css" rel="stylesheet" />
         <!-- Styles -->
        
     </head>
-    <body>
-        <header>
-            <a href="#"><img src="https://www.bing.com/images/search?view=detailV2&ccid=YdkQGmhB&id=39C8153156298FA98D761C230FA8915757AE29DF&thid=OIP.YdkQGmhB9c2Sr84FeDD9egHaEK&mediaurl=https%3a%2f%2flogos-world.net%2fwp-content%2fuploads%2f2020%2f04%2fAmazon-Logo.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.61d9101a6841f5cd92afce057830fd7a%3frik%3d3ymuV1eRqA8jHA%26pid%3dImgRaw%26r%3d0&exph=2160&expw=3840&q=amazon+logo&simid=608032808300188171&FORM=IRPRST&ck=E8A966C96197AA096C5790FBF769E5F8&selectedIndex=0&ajaxhist=0&ajaxserp=0"></a>
-            <div class="map-flex">
-            <i class="fas fa-map-marker"></i>
-                <div>
-                    <span>Deliver to</span>
-                    <span>Germany</span>
-                </div>
+            <body>
+                <header>
+                    <div class="first">
+                        <div class="flex logo">
+                    <a href="#"><img src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png"></a>
+                    <div class="map-flex">
+                    <i class="fas fa-map-marker"></i>
+                        <div>
+                            <span>Deliver to</span>
+                            <span>Germany</span>
+                        </div>
+                    </div>
+        </div>
+
+        <div class="flex input">
+            <div>
+                <span>All</span>
+                <i class="fas fa-caret-down"></i>
+                
             </div>
-<div class="flex input">
-    <div>
-        <span>All</span>
-        <i class="fas fa-cart-down"></i>
-        
-    </div>
-    <input type="text">
-    <i class="fa fa-search"></i>
-    
-</div>
-<div class="flex right">
-        <div class="flex-lang">
-            <img src="" alt="">
-            <i class="fas fa-caret-down"></i>
-</div>
-<div class="sign">
-    <span>Hello,Sign In</span>
-    <div class="flex-ac">
-        <span>Account & List</span>
-        <i class="fas fa-caret-down"></i>
-</div>
-</div>
-<div class="flex cart">
-<i class="fas fa-shopping-cart"></i>
-<span class="ca">Cart</span>
-<p>0</p>
-    
-</div>
-</div> 
-</div>   
+            <input type="text">
+            <i class="fa fa-search"></i>
+            
+        </div>
+        <div class="flex right">
+                <div class="flex lang">
+                    <img src="https://pngimg.com/uploads/flags/flags_PNG14592.png" alt="">
+                    <i class="fas fa-caret-down"></i>
+        </div>
+        <div class="sign">
+            <span>Hello,Sign In</span>
+            <div class="flex-ac">
+                <span>Account & List</span>
+                <i class="fas fa-caret-down"></i>
+        </div>
+        </div>
+        <div class="flex cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="ca">Cart</span>
+        <p>0</p>
+            
+        </div>
+        </div> 
+        </div>  
+        </div>
         </header>
     </body>
 </html>
+
+
+
+
+<style>
+*{
+    margin:0%;
+    padding:0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    width: 100%;
+    background-color: aliceblue;
+    box-sizing: border-box;
+}
+.first{
+    width: 100%;
+    height: 70px;
+    background-color: #131a22;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.first img{
+    width:130px;
+    margin:0 10px;
+    padding:5px 10px;
+    border:1px solid transparent;
+    border-radius:3px;
+}
+.first{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.flex{
+    display:flex;
+    justify-content:center;
+}
+.flex span,i{
+        color:white;
+ }
+.logo{
+        flex:0.18;
+        margin-right:10px;
+        justify-content:space-between;
+}
+.map{
+        border:1px solid transparent;
+        border-radius:3px;
+}
+.map i {
+        margin-top:17px;
+        padding-left:5px;
+        font-size:17px;
+}
+.map div{
+    padding:5px;
+    display:flex;
+    cursor:pointer;
+    flex-direction:column;
+
+}
+.map div span:first-child{
+font-weight:400;
+font-size:13px;
+
+}
+.map div span{
+    font-weight:bold;
+}
+
+.right{
+    justify-content:space-between;
+    flex:0.29;
+    margin-right:10px;
+    align-items:center;
+}
+.input{
+    width:100%;
+    background-color:white;
+    flex:0.53;
+    border-radius:5px;
+    display:flex;
+    margin:0 10px;
+    align-items:center;
+    overflow:hidden;
+    justify-content:space-between;
+
+}
+
+
+.input input{
+    outline:none;
+    width:80%;
+    font-size:16px;
+    padding:10px 2px;
+    border:none;
+}
+.input .fa-search{
+    color:rgb(51,51,51);
+    padding:10px 15px;
+    font-size:20px;
+    cursor:pointer;
+    background-color:#febd69;
+    border-radius:0 5px 5px 0;
+}
+.input div{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-right:1px solid gray;
+    background-color:rgb(236,234,234);
+    padding:6px 0;
+}
+.input .fa-search{
+    color:#rgb(51,51,51);
+    padding:10px 15px;
+    font-size:20px;
+    cursor:pointer;
+    background-color:#febd69;
+    border-radius:0 5px 5px 0;
+}
+</style>
