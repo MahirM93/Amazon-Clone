@@ -21,7 +21,7 @@
                     <i class="fas fa-map-marker"></i>
                   
                         <div>  
-                        
+                        <br>
                             <span>Deliver to</span>
                             <span>Germany</span>
                         </div>
